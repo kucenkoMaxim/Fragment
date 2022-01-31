@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentOne">
+    tools:context=".FragmentTwo"
+    tools:visibility="visible">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -19,6 +20,5 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginVertical="100dp"
-        android:onClick="onCreateView"
         android:text="Button" />
 </FrameLayout>
