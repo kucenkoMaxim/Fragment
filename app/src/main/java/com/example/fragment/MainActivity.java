@@ -1,25 +1,26 @@
 package com.example.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements Messager {
+public class MainActivity extends AppCompatActivity implements Messanger {
+
+    FragmentTwo fragmentTwo;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Messanger mesHost =(Messanger) getSupportFragmentManager().findFragmentById(R.id.host_fragment);
     }
 
     @Override
-    public void sendMessage(String s) {
-       HostFragment frag=new HostFragment();
-       FragmentTransaction ft=getSupportFragmentManager().beginTransaction();
-       ft.add(R.id.host_fragment,frag);
-       ft.commit();
+    public void mesHost(String a) {
+
+    fragmentTwo.TwoDate(a);
 
 
 

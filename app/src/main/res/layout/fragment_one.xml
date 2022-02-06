@@ -6,7 +6,7 @@
     tools:context=".FragmentOne">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txt_One"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -14,7 +14,7 @@
         android:text="Name" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_Frag_Two"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"

@@ -14,35 +14,43 @@ import android.widget.EditText;
 
 
 public class FragmentOne extends Fragment {
-private Button button1;
-private EditText editText;
+
+
+           private   Button btnFragOne;
+           private EditText editText;
+
+
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_one, container, false);
-          init(view);
+        init(view);
 
 
 
 
-            button1 .setOnClickListener(new View.OnClickListener() {
+        btnFragOne.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                String editString=editText.getText().toString();
-                if (editString.length()>0){
-           MainActivity activity=(MainActivity) getActivity();
-                    activity.sendMessage (editString);
+            String editString=editText.getText().toString();
+            if (editString.length()>0){
+                MainActivity activity=(MainActivity) getActivity();
+                activity.mesHost(editString);
+            }
                 }
-                }
+
             });
 
         return view;
         }
         private void init(View view){
-                button1=view.findViewById(R.id.button1);
+            btnFragOne=view.findViewById(R.id.txt_Two);
+
         }
+
+
 }
 
 
